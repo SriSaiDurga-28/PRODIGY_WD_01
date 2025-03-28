@@ -1,0 +1,145 @@
+/* General styles */
+body {
+  margin: 0; /* Removes default margin */
+  padding: 10px; /* Adds space between the web page border and content */
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #f0f8ff; 
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px; /* Sidebar width */
+  background-color: #7fffd4; /*  color for navigation bar */
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: circle;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Vertical arrangement */
+  align-items: start; /* Align items to the left */
+}
+
+nav ul li {
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; 
+  padding: 15px;
+  display: block; /* Make links take full width */
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+nav ul li a:hover {
+  
+  font-weight: italic; /* Add italic font on hover */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  display: none;
+  position: relative;
+  background-color: #000080; 
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  padding: 5px 15px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: white; 
+  display: block; /* Display dropdown items as blocks */
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background-color: red; 
+  color: #ffffff;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown on hover */
+}
+
+/* Section styles */
+section {
+  margin-left: 200px; /* Push content to the right of the sidebar */
+  height: 100vh;
+  padding: 20px;
+}
+#emergingtech{
+ background-color: #ff1493; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 100px; /* Adds spacing between text and border */
+  font-size:80px;
+}
+
+#AI {
+  background-color: #0000ff; /*  background for the text */
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+#BC {
+  background-color: yellow; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+#BT {
+  background-color: #da70d6; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+#about {
+  background-color: #008000; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+#services {
+  background-color: #191970; 
+  background-color: #191970; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+#contact {
+  background-color: #00ff00; 
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 50px; /* Adds spacing between text and border */
+}
+
+/* Specific styles for the text with a border image */
+.border-text {
+  display: inline-block; /* Ensures the border wraps only the text */
+  background-color: #800000; 
+  color: white; /* Changes the text color */
+  font-style: oblique; /* Keeps the text styling */
+  border: 10px solid transparent; /* Space for the border image */
+  border-image: url('border.jpg') 30 round; /* Apply the border image */
+  padding: 10px; /* Adds spacing between text and border */
+  line-height: 1.5;
+}
